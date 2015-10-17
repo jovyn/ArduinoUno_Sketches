@@ -1,4 +1,7 @@
 // First Sketch : Blinking LED
+// Courtesy: Getting Started With Arduino - Massimo Banzi
+// O'Reilly link : http://shop.oreilly.com/product/9780596155520.do  
+
 
 const int LED = 13;  // LED connected to digital pin 13 
 
