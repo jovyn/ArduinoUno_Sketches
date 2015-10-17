@@ -1,0 +1,28 @@
+// Read values from Analog input 0 and send it to the computer's serial monitor.
+// Courtesy: Getting Started With Arduino - Massimo Banzi
+// O'Reilly link : http://shop.oreilly.com/product/9780596155520.do
+
+
+const int SENSOR = 0; // Select the input pin for sensor resistor
+
+int val = 0;  // Store value from sensor
+
+
+void setup(){
+  
+  Serial.begin(9600); //open serial port to send data back to the computer at 9600 bits per sec
+  
+}
+
+void loop(){
+  
+  val = analogRead(SENSOR); // read the value from the sensor
+  
+  Serial.println(val); // print the value to serial port
+  
+  delay(2000);  // 2 sec delay
+  
+}
+
+
+
